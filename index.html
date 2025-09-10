@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            height: 400vh;
+            font-family: Arial, sans-serif;
+            margin: 60px;
+            margin-left: 70px;
+        }
+
+        #sticky-box {
+            position: sticky;
+            background-color: #f3e0d1;
+            border-color: #2927ae;
+            top: 0; 
+        }
+        #fixed {
+            position: fixed;
+            background-color: #ffcc99;
+            bottom: 20px;
+            right: 20px;
+        }
+        #absolute-box {
+            position: absolute;
+            background-color: #f7cac9;
+            border-color: #7f2324;
+            top: 60px;
+            right: 30px;
+        }
+        #static-box {
+            position: static;
+            background-color: #ffebcd;
+            border-color: #1ed224;
+        }
+        #relative-box {
+            position: relative;
+            background-color: #cfe2f3;
+            border-color: #3a8ee6;
+            top: 20px; 
+            margin-bottom: 30px;
+        }
+        .box {
+            width: 210px;
+            height: 160px;
+            border: 2px solid #311717;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 100px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,1)
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Practico 2: Box Model</h1>
+    
+    <div class="seccion">
+        <div id="static-box" class="box">Static Box</div>
+
+        <div id="absolute-box" class="box">Absolute Box</div>
+
+        <div id="relative-box" class="box">Relative Box</div>
+    </div>
+    <div id="sticky-box" class="box">Sticky Box</div>
+
+    <div id="fixed" class="box">Fixed</div>
+
+</body>
+</html>
